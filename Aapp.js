@@ -72,7 +72,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // TODO: DONE
-<<<<<<< HEAD
+
 var testArray = [2,3,4]; //eslint-disable-line
   function sumArray(arrayParm) { //eslint-disable-line
     var total = 0;
@@ -82,17 +82,7 @@ var testArray = [2,3,4]; //eslint-disable-line
     var message = arrayParm + ' was passed in as an array of numbers, and ' + total + ' is their sum.';
     return [total, message];
   }
-=======
-var testArray = [2, 3, 4]; //eslint-disable-line
-function sumArray(arrayParm) { //eslint-disable-line
-  var total = 0;
-  for (var i = 0; i < arrayParm.length; i++) {
-    total = sum(total, arrayParm[i])[0];
-  }
-  var message = arrayParm + ' was passed in as an array of numbers, and ' + total + ' is their sum.';
-  return [total, message];
-}
->>>>>>> c8ab22287a56e8dc8cf11fe79c7b0e42c52b238f
+
 
 // TODO: Here is the test for sumArray(); uncomment it to run it
 testSumArray(testArray);
