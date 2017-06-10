@@ -71,31 +71,41 @@ Write a function called sumArray() that takes in an array of numbers as its sing
 IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To do addition, use your sum() function that you've already created. You're going to have to be resourceful to figure out how to do this.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
-// TODO: Write your code here
+// TODO: DONE
 var testArray = [2,3,4]; //eslint-disable-line
-
-function sumArray(testArray){ //eslint-disable-line
-
-}
+  function sumArray(arrayParm) { //eslint-disable-line
+    var total = 0;
+    for (var i = 0; i < arrayParm.length; i++) {
+      total = sum(total, arrayParm[i])[0];
+    }
+    var message = arrayParm + ' was passed in as an array of numbers, and ' + total + ' is their sum.';
+    return [total, message];
+  }
 
 // TODO: Here is the test for sumArray(); uncomment it to run it
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
-/* Problem 5
+/* Problem 5 DONE
 Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 "The numbers 2,3,4 have a product of 24."
 IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(testArray){ //eslint-disable-line
-
-}
+  var testArray = [2, 3, 4]; //eslint-disable-line
+  function multiplyArray(arrayParm) { //eslint-disable-line
+    var total = 1;
+    for (var i = 0; i < arrayParm.length; i++) {
+      total = multiply(total, arrayParm[i])[0];
+    }
+    var message = 'The numbers ' + arrayParm + ' have a product of ' + total + '.';
+    return [total, message];
+  }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(2,3,4);
+testMultiplyArray(2,3,4);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
